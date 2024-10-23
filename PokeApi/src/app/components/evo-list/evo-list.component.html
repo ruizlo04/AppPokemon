@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12 text-center mb-4">
+            <h1 class="display-4">Evoluciones</h1>
+        </div>
+        @for(item of listadoEvos; track item.url){
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 text-center shadow-sm">
+                <img [src]="'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/' + item.url.split('/')[item.url.split('/').length - 2].padStart(3, '0') +  '.png'" class="card-img-top mb-2 rounded">
+            </div>
+        </div>
+        }
+    </div>
+</div>
