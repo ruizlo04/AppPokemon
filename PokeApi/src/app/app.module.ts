@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PokeListComponent } from './components/poke-list/poke-list.component';
+import { EvoListComponent } from './components/evo-list/evo-list.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { provideHttpClient } from '@angular/common/http';
 
@@ -13,6 +14,7 @@ import { provideHttpClient } from '@angular/common/http';
   declarations: [
     AppComponent,
     PokeListComponent,
+    EvoListComponent,
     MenuComponent
   ],
   imports: [
