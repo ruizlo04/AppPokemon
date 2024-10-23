@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.section{
+    justify-content: center;
+}
+
+h5{
+    background-color: black;
+    color: #f4f4f4;
+    font-style:oblique;
+    border-radius: 20px;
+}
+.card, div{
+    padding: 1%;
+}
+.card{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card, img {
+    border: 30px solid blak;
+    border-image: url("/files/4127/border.png") 30 30 round;
+}

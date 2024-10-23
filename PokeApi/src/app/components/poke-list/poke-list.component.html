@@ -1,0 +1,19 @@
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row mt-2 mb-2">
+              @for(item of pokemonList; track item.url) {
+              <div class="col-md-3 col-12">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body">
+                    <img [src]="'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/'
+                     + item.url.split('/')[item.url.split('/').length - 2].padStart(3, '0') +  '.png'" class="card-img-top mb-2 rounded">  
+                  </div>
+                  <h5 class="card-title">{{ item.name }}</h5>
+                </div>
+              </div>
+              }
+            </div>
+        </div>
+    </section>
+</body>
