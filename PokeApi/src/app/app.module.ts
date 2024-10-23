@@ -9,13 +9,15 @@ import { PokeListComponent } from './components/poke-list/poke-list.component';
 import { EvoListComponent } from './components/evo-list/evo-list.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { provideHttpClient } from '@angular/common/http';
+import { RegListComponent } from './components/reg-list/reg-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokeListComponent,
     EvoListComponent,
-    MenuComponent
+    MenuComponent,
+    RegListComponent
   ],
   imports: [
     BrowserModule,

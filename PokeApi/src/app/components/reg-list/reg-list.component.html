@@ -1,0 +1,14 @@
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-12 text-center mb-4">
+          <h1 class="display-4">Regiones</h1>
+      </div>
+      @for(item of listadoRegion; track item.url){
+      <div class="col-md-4 col-sm-6 mb-4">
+          <div class="card h-100 text-center shadow-sm">
+              <h5>{{item.name}}</h5>
+          </div>
+      </div>
+      }
+  </div>
+</div>
