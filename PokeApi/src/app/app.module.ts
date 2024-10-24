@@ -10,6 +10,7 @@ import { EvoListComponent } from './components/evo-list/evo-list.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { provideHttpClient } from '@angular/common/http';
 import { RegListComponent } from './components/reg-list/reg-list.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RegListComponent } from './components/reg-list/reg-list.component';
     PokeListComponent,
     EvoListComponent,
     MenuComponent,
-    RegListComponent
+    RegListComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

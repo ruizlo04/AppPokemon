@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+}
+
+.pikachu {
+    width: 150px;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-link {
+    text-decoration: none;
+    background-color: #ff0000;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #cc0000;
+}
