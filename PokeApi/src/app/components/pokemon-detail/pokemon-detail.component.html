@@ -1,0 +1,33 @@
+<div *ngIf="pokemonDetail" class="container mt-4">
+    <div class="card">
+    <div class="card-header text-center">
+        <h2>{{ pokemonDetail.name | uppercase }}</h2>
+    </div>
+    <div class="card-body">
+        <div class="row mb-3">
+        <div class="col-md-6">
+            <h5>ID:</h5>
+            <p>{{ pokemonDetail.id }}</p>
+        </div>
+    <div class="col-md-6">
+            <h5>Altura:</h5>
+            <p>{{ pokemonDetail.height }} m</p>
+        </div>
+        </div>
+        <div class="row mb-3">
+        <div class="col-md-6">
+            <h5>Peso:</h5>
+            <p>{{ pokemonDetail.weight }} kg</p>
+        </div>
+        <div class="col-md-6">
+            <h5>Tipo:</h5>
+            <p>{{ pokemonDetail.types[0].type.name }}</p>
+        </div>
+        </div>
+        <div class="row mb-3">
+            <h5>Imagen:</h5>
+            <img [src]="pokemonDetail.sprites.front_default" alt="pokemon" class="img-fluid" style="max-width: 750px;">
+        </div>
+    </div>
+    </div>
+</div>
