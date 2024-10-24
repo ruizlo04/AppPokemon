@@ -20,7 +20,7 @@ import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-deta
     EvoListComponent,
     MenuComponent,
     RegListComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
     PokemonDetailComponent,
   ],
   imports: [
