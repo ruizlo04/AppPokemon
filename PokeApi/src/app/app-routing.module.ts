@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PokeListComponent } from './components/poke-list/poke-list.component';
 import { EvoListComponent } from './components/evo-list/evo-list.component';
 import { RegListComponent } from './components/reg-list/reg-list.component';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'evoluciones', component: EvoListComponent},
   {path: 'regiones', component: RegListComponent},
   {path: '', redirectTo: '/pokemons', pathMatch: 'full'},
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({
